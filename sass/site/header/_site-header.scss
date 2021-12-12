@@ -16,7 +16,7 @@
 
 	@include media(tablet) {
 		margin: 0;
-		padding: 3rem 0;
+		padding: 0 0 3rem 0;
 
 		&.featured-image {
 			min-height: 100vh;
@@ -136,4 +136,12 @@
 	color: $color__text-light;
 	font-weight: normal;
 	margin: 0;
+}
+
+
+.top-header-info {
+	font-family: sans-serif;
+	background: #2e1f9b;
+	color: white;
+	text-align: center;
 }

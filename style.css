@@ -3748,7 +3748,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-header {
     margin: 0;
-    padding: 3rem 0;
+    padding: 0 0 3rem 0;
   }
   .site-header.featured-image {
     min-height: 100vh;
@@ -3863,6 +3863,13 @@ body.page .main-navigation {
   color: #767676;
   font-weight: normal;
   margin: 0;
+}
+
+.top-header-info {
+  font-family: sans-serif;
+  background: #2e1f9b;
+  color: white;
+  text-align: center;
 }
 
 .site-header.featured-image {

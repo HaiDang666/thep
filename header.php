@@ -25,7 +25,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 
 		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
-
+			<div class="top-header-info">
+				Hotline: 0123456789 - Địa chỉ: Số ABC, đường 3 tháng 2, phường Vĩnh Lạc, Trạch Giá, Kiên Giang.
+			</div>
 			<div class="site-branding-container">
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 			</div><!-- .site-branding-container -->
