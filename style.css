@@ -2767,7 +2767,7 @@ a:focus {
 /** === Main menu === */
 .main-navigation {
   display: block;
-  margin-top: 0.25rem;
+  margin-top: 1rem;
   /* Un-style buttons */
   /*
 	 * Sub-menu styles
@@ -2788,7 +2788,7 @@ body.page .main-navigation {
 }
 
 .main-navigation > div {
-  display: inline;
+  display: flex;
 }
 
 .main-navigation button {
@@ -2823,7 +2823,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu {
   display: inline-block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -3726,6 +3726,10 @@ body.page .main-navigation {
   overflow: hidden;
 }
 
+.content-area {
+  background: grey !important;
+}
+
 /* Content */
 /*--------------------------------------------------------------
 ## Header
@@ -3870,6 +3874,11 @@ body.page .main-navigation {
   background: #2e1f9b;
   color: white;
   text-align: center;
+  font-size: 18px;
+}
+
+.header-banner {
+  background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/dai.jpg");
 }
 
 .site-header.featured-image {
