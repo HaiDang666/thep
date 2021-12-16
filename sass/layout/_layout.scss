@@ -10,5 +10,13 @@
 }
 
 .content-area {
-	background: grey !important;
+	background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/steel-structure.jpg");
+	min-height: 500px;
+	width: 80%;
+	max-width: 1640px;
+	margin: 0 auto;
+}
+
+.contact-block {
+	background-color: #ffffff8a;
 }

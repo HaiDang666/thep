@@ -58,15 +58,18 @@
 
 		> li {
 
-			color: $color__link;
+			// color: $color__link;
+			color: black;
 			display: inline;
 			position: relative;
 
 			> a {
 
 				font-weight: 700;
-				color: $color__link;
+				// color: $color__link;
+				color: black;
 				margin-right: #{0.5 * $size__spacing-unit};
+				border-bottom: 3px solid black;
 
 				+ svg {
 					margin-right: #{0.5 * $size__spacing-unit};
@@ -74,7 +77,8 @@
 
 				&:hover,
 				&:hover + svg {
-					color: $color__link-hover;
+					// color: $color__link-hover;
+					border-bottom: 2px solid black;
 				}
 			}
 

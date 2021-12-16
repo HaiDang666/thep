@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,7 +27,8 @@
 
 		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
 			<div class="top-header-info">
-				Hotline: 0123456789 - Địa chỉ: Số ABC, đường 3 tháng 2, phường Vĩnh Lạc, Trạch Giá, Kiên Giang.
+				<!-- Hotline: 0123456789 - Địfa chỉ: Số ABC, đường 3 tháng 2, phường Vĩnh Lạc, Trạch Giá, Kiên Giang. -->
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 			</div>
 			<div class="site-branding-container">
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
@@ -50,10 +52,6 @@
 					<?php rewind_posts(); ?>
 				</div>
 			<?php endif; ?>
-
-			<div class="header-banner">
-
-			</div>
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

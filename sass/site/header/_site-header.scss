@@ -16,11 +16,11 @@
 
 	@include media(tablet) {
 		margin: 0;
-		padding: 0 0 3rem 0;
+		padding: 0 0 0 0;
 
 		&.featured-image {
 			min-height: 100vh;
-			margin-bottom: 3rem;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -141,7 +141,7 @@
 
 .top-header-info {
 	font-family: sans-serif;
-	background: #2e1f9b;
+	background: black;
 	color: white;
 	text-align: center;
 	font-size: 18px;

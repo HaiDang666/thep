@@ -20,7 +20,17 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<div>Empty</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4 contact-block">
+					contacts
+				</div>
+				<div class="col-sm-12 col-md-8 product-block">
+					<div class="col-sm-12 col-md-6 col-lg-12">steel 12</div>
+					<div class="col-sm-12 col-md-6 col-lg-12">steel 4</div>
+					<div class="col-sm-12 col-md-6 col-lg-12">steel 4</div>
+					<div class="col-sm-12 col-md-6 col-lg-12">steel 4</div>
+				</div>
+			</div>
 
 		</main>
 	</div>
