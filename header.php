@@ -13,22 +13,42 @@
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<meta http-equiv="Cache-control" content="no-cache">
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="JJteMrfC"></script>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 
 		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
 			<div class="top-header-info">
-				<!-- Hotline: 0123456789 - Địfa chỉ: Số ABC, đường 3 tháng 2, phường Vĩnh Lạc, Trạch Giá, Kiên Giang. -->
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+				<div>
+					<?php if ( has_custom_logo() ) : ?>
+						<?php the_custom_logo(); ?>
+					<?php endif; ?>
+				</div>
+				<div>
+					<div style="font-size: 44px;font-family: Anton;">THÉP GIA ĐẠT</div>
+					<div>Chuyên phân phối sắt thép xây dựng, thép hộp, thép hình từ các nhà máy thép uy tín. </div>
+					<div>
+						Địa chỉ: Lô F13-15,16,17 Đường 3/2, Phường Vĩnh Lạc, Trạch Giá, Kiên Giang.
+					</div>
+					<div>
+						<span>Email: thepgiadat@gmail.com</span>
+						<span>&nbsp;&nbsp;&nbsp;</span>
+						<span>Điện thoại: 081 762 7575</span>
+					</div>
+				</div>
 			</div>
 			<div class="site-branding-container">
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>

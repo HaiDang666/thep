@@ -14,19 +14,27 @@
 ?>
 
 	</div><!-- #content -->
-
+	<div class="float-contact">
+		<div class="float-contact-btn-wrapper">
+			<button class="chat-zalo">
+				<a href="http://zalo.me/123456890">Chat Zalo</a>
+			</button>
+		</div>
+		<div class="float-contact-btn-wrapper">
+			<button class="chat-face">
+				<a href="http://m.me/moosun.vn">Chat Facebook</a>
+			</button>
+		</div>
+		<div class="float-contact-btn-wrapper">
+			<button class="hotline">
+				<a href="tel:123456890">Hotline: 123456890</a>
+			</button>
+		</div>
+	</div>
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<?php $blog_info = get_bloginfo( 'name' ); ?>
-			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
-				<?php
-				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				?>
-			</a>
+			
+			
 			<?php
 			if ( function_exists( 'the_privacy_policy_link' ) ) {
 				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
@@ -45,12 +53,20 @@
 					?>
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
+			<div style="font-size: 13px;">
+				<?php $blog_info = get_bloginfo( 'name' ); ?>
+				<?php if ( ! empty( $blog_info ) ) : ?>
+					<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<?php endif; ?>
+				<div>Số ABC, đường 3 tháng 2, phường Vĩnh Lạc, Trạch Giá, Kiên Giang. </div>
+				<div>Hotline: 0123456789, Hotline: 0123456789</div>
+			</div>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

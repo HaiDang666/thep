@@ -10,13 +10,184 @@
 }
 
 .content-area {
-	background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/steel-structure.jpg");
-	min-height: 500px;
+	// min-height: 500px;
 	width: 80%;
 	max-width: 1640px;
 	margin: 0 auto;
 }
 
 .contact-block {
-	background-color: #ffffff8a;
+	background-color: white;
+	border: 1px solid grey;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+
+	.contact-header {
+		text-align: center;
+		background: black;
+		color: white;
+		padding: 10px;
+	}
+
+	.no-bullets ul {
+		padding-left: 1rem;
+		font-size: 20px;
+		border-bottom: 1px solid;
+		margin-bottom: 0px;
+	}
+}
+
+.no-bullets {
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+}
+
+.zalo-icon {
+	width: 22px;
+}
+
+.product-block {
+	background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/steel-structure.jpg");
+}
+
+.store-callout {
+	display: flex;
+	padding: 15px 0 15px 15px;
+}
+
+.store-callout.large .store-callout-image {
+    flex-basis: 50%;
+}
+
+.store-callout.large .store-callout-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+	padding-left: 15px;
+	color: white;
+}
+
+.store-callout.small .store-callout-image {
+    flex-basis: 50%;
+}
+
+.store-callout-small {
+    flex-direction: column;
+    display: flex;
+    color: white;
+    padding-bottom: 15px;
+}
+
+a.more-btn-wrapper {
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+
+	:hover {
+		text-decoration: none;
+	}
+}
+
+.more-btn {
+	border: 2px solid #2658ce;
+	color: white;
+	display: block;
+	padding: 0 10px;
+	font-size: 15px;
+
+	&:hover {
+		background: #2658ce;
+		color: white;
+	}
+}
+
+.store-callout-content {
+    background: #393737e3;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.store-callout-description {
+	font-size: 13px;
+	padding: 5px 0;
+}
+
+.store-picture-title {
+	background: black;
+	padding: 10px;
+	color: white;
+}
+
+#sticky-sidebar {
+	ul {
+		font-size: 18px;
+		padding-left: 0;
+		text-align: center;
+		border-bottom: 1px solid grey;
+	}
+
+	.contact-header {
+		text-align: center;
+		background: black;
+		color: white;
+	}
+
+	border: 1px solid grey;
+}
+
+.float-contact {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99999;
+	display: flex;
+	flex-direction: column;
+}
+
+.chat-zalo {
+	background: #8eb22b;
+	border-radius: 20px;
+	padding: 0 18px;
+	color: white;
+	display: block;
+	margin-bottom: 6px;
+}
+
+.chat-face {
+	background: #125c9e;
+	border-radius: 20px;
+	padding: 0 18px;
+	color: white;
+	display: block;
+	margin-bottom: 6px;
+}
+
+.float-contact .hotline {
+	background: #d11a59!important;
+	border-radius: 20px;
+	padding: 0 18px;
+	color: white;
+	display: block;
+	margin-bottom: 6px;
+}
+
+.chat-zalo a, .chat-face a, .hotline a {
+	font-size: 15px;
+	color: white;
+	font-weight: 400;
+	text-transform: none;
+	line-height: 0;
+}
+
+.float-contact-btn-wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+@media (max-width: 549px){
+	.float-contact{
+		display:none
+	}
 }
