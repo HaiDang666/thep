@@ -2838,6 +2838,8 @@ body.page .main-navigation {
   color: black;
   margin-left: 0.5rem;
   border-bottom: 3px solid black;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .main-navigation .main-menu > li > a + svg {
@@ -3416,6 +3418,7 @@ body.page .main-navigation {
 .footer-navigation .footer-menu li {
   display: inline;
   margin-left: 1rem;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
@@ -3722,16 +3725,14 @@ body.page .main-navigation {
 }
 
 .content-area {
-  width: 80%;
+  width: 90%;
   max-width: 1640px;
   margin: 0 auto;
 }
 
 .contact-block {
   background-color: white;
-  border: 1px solid grey;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  margin-bottom: 5px;
 }
 
 .contact-block .contact-header {
@@ -3739,6 +3740,9 @@ body.page .main-navigation {
   background: black;
   color: white;
   padding: 10px;
+  width: fit-content;
+  font-family: Anton;
+  letter-spacing: 1px;
 }
 
 .contact-block .no-bullets ul {
@@ -3758,11 +3762,8 @@ body.page .main-navigation {
 }
 
 .zalo-icon {
-  width: 22px;
-}
-
-.product-block {
-  background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/steel-structure.jpg");
+  width: 20px;
+  margin-left: 0px;
 }
 
 .store-callout {
@@ -3834,6 +3835,12 @@ a.more-btn-wrapper :hover {
   color: white;
 }
 
+.project-text {
+  background: #393737e3;
+  text-align: center;
+  padding: 5px 0;
+}
+
 #sticky-sidebar {
   border: 1px solid grey;
 }
@@ -3854,16 +3861,16 @@ a.more-btn-wrapper :hover {
 .float-contact {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 99999;
   display: flex;
   flex-direction: column;
 }
 
 .chat-zalo {
-  background: #8eb22b;
+  background: #125c9e;
   border-radius: 20px;
-  padding: 0 18px;
+  padding: 5px 10px;
   color: white;
   display: block;
   margin-bottom: 6px;
@@ -3872,7 +3879,7 @@ a.more-btn-wrapper :hover {
 .chat-face {
   background: #125c9e;
   border-radius: 20px;
-  padding: 0 18px;
+  padding: 5px 10px;
   color: white;
   display: block;
   margin-bottom: 6px;
@@ -3881,29 +3888,56 @@ a.more-btn-wrapper :hover {
 .float-contact .hotline {
   background: #d11a59 !important;
   border-radius: 20px;
-  padding: 0 18px;
+  padding: 5px 10px;
   color: white;
   display: block;
   margin-bottom: 6px;
 }
 
 .chat-zalo a, .chat-face a, .hotline a {
-  font-size: 15px;
   color: white;
   font-weight: 400;
-  text-transform: none;
-  line-height: 0;
+  text-decoration: none !important;
 }
 
 .float-contact-btn-wrapper {
   display: flex;
-  justify-content: end;
+  font-size: 15px;
 }
 
 @media (max-width: 549px) {
   .float-contact {
     display: none;
   }
+}
+
+.bg-black {
+  background: black;
+}
+
+.normal-header {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: Anton;
+  letter-spacing: 1px;
+}
+
+.normal-sub-header {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Anton;
+  letter-spacing: 1px;
+}
+
+.anton-text {
+  font-family: Anton;
+  letter-spacing: 1px;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 /* Content */
@@ -3948,7 +3982,7 @@ a.more-btn-wrapper :hover {
 
 @media only screen and (min-width: 768px) {
   .site-branding {
-    margin: 0 calc(10% + 60px);
+    margin: 0 5%;
   }
 }
 
@@ -4052,10 +4086,7 @@ a.more-btn-wrapper :hover {
   text-align: center;
   font-size: 18px;
   padding-top: 0.5rem;
-}
-
-.header-banner {
-  background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/dai.jpg");
+  background-image: url("https://thepgiadat.com/wp-content/uploads/2021/12/banner.png");
 }
 
 .site-header.featured-image {
@@ -5255,18 +5286,6 @@ a.more-btn-wrapper :hover {
 ## Footer
 --------------------------------------------------------------*/
 /* Site footer */
-#colophon .widget-area,
-#colophon .site-info {
-  margin: calc(2 * 1rem) 1rem;
-}
-
-@media only screen and (min-width: 768px) {
-  #colophon .widget-area,
-  #colophon .site-info {
-    margin: calc(3 * 1rem) calc(10% + 60px);
-  }
-}
-
 #colophon .widget-column {
   display: flex;
   flex-wrap: wrap;
@@ -5289,7 +5308,7 @@ a.more-btn-wrapper :hover {
 }
 
 #colophon .site-info {
-  color: #767676;
+  color: white;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -6629,6 +6648,7 @@ object {
 
 .custom-logo-link {
   display: inline-block;
+  width: 120px;
 }
 
 .avatar {

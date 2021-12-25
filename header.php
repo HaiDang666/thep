@@ -38,7 +38,7 @@
 					<?php endif; ?>
 				</div>
 				<div>
-					<div style="font-size: 44px;font-family: Anton;">THÉP GIA ĐẠT</div>
+					<div style="font-size: 44px;font-family: Anton;color: #2377f8;">THÉP GIA ĐẠT</div>
 					<div>Chuyên phân phối sắt thép xây dựng, thép hộp, thép hình từ các nhà máy thép uy tín. </div>
 					<div>
 						Địa chỉ: Lô F13-15,16,17 Đường 3/2, Phường Vĩnh Lạc, Trạch Giá, Kiên Giang.

@@ -38,7 +38,7 @@
 	word-wrap: break-word;
 
 	@include media(tablet) {
-		margin: 0 $size__site-margins;
+		margin: 0 5%;
 	}
 }
 
@@ -146,8 +146,5 @@
 	text-align: center;
 	font-size: 18px;
 	padding-top: 0.5rem;
-}
-
-.header-banner {
-	background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/dai.jpg");
+	background-image: url("https://thepgiadat.com/wp-content/uploads/2021/12/banner.png");
 }
