@@ -23,7 +23,7 @@ get_header();
 
 		<div class="row">
 
-			<div class="col-sm-12 col-md-10">
+			<div class="col-sm-12 col-md-9">
 				<div class="row">
 					<!-- san pham noi bat -->
 					<div class="contact-block col-sm-12 col-md-12">
@@ -90,7 +90,7 @@ get_header();
 							Hình Ảnh Cửa Hàng
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12" id="slide-anything55">
 						<?php
 						echo do_shortcode('[slide-anything id="17"]');
 						?>
@@ -106,50 +106,50 @@ get_header();
 						<div class="row">
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/thep2.jpg" />
+									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/KSDC-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									Khảo sát địa chất, địa hình
+									<a class="project-link" href="https://thepgiadat.com/khao-sat-dia-chat-dia-hinh/">Khảo sát địa chất, địa hình</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/thep2.jpg" />
+									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/COC_NHOI-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									Khoan cọc nhồi
+									<a class="project-link" href="https://thepgiadat.com/khoan-coc-nhoi/">Khoan cọc nhồi</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/thep2.jpg" />
+									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/NHA_YEN-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									Xây dựng nhà yến
+									<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-yen/">Xây dựng nhà yến</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/thep2.jpg" />
+									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/NHA_O-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									Xây dựng nhà ở
+									<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-o/">Xây dựng nhà ở</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/thep2.jpg" />
+									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/EP_COC-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									Ép cọc
+									<a class="project-link" href="https://thepgiadat.com/ep-coc/">Ép cọc</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/thep2.jpg" />
+									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/BO_KE-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									Bờ kè
+									<a class="project-link" href="https://thepgiadat.com/bo-ke/">Bờ kè</a>
 								</div>
 							</div>
 						</div>
@@ -158,7 +158,7 @@ get_header();
 			</div>
 
 			<!-- right bar --->
-			<div class="col-sm-12 col-md-2 pl-0 pr-0">
+			<div class="col-sm-12 col-md-3 pl-0 pr-0">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="bg-black">
@@ -167,16 +167,16 @@ get_header();
 						<div style="border: 1px solid;">
 							<div class="mb-1 mt-1 pl-1">
 								<div class="normal-sub-header">Đặt hàng</div>
-								<div style="font-size: 20px;">
+								<div style="font-size: 20px;text-align: center;">
 									<div><i class="fas fa-phone-square pr-1"></i>02973 86 86 39 </div>
-									<div>(SĐT Văn phòng)</div>
+									<div>(Văn phòng)</div>
 									<div><i class="fas fa-phone-square pr-1"></i>0817 62 75 75 </div>
 									<div>(Mr. Sa)</div>
 								</div>
 							</div>
 							<div class="mb-1 mt-1 pl-1">
-								<div class="normal-sub-header">Thi công <br /> xây dựng</div>
-								<div style="font-size: 20px;">
+								<div class="normal-sub-header">Thi công xây dựng</div>
+								<div style="font-size: 20px;text-align: center;">
 									<div><i class="fas fa-phone-square pr-1"></i>097 777 62 82</div>
 									<div>(Mr. Tuấn Anh)</div>
 									<div><i class="fas fa-phone-square pr-1"></i>098 97 97 108 </div>
@@ -190,8 +190,10 @@ get_header();
 						<div class="bg-black">
 							<div class="normal-header">Gửi Liên Hệ</div>
 						</div>
-						<div style="border: 1px solid;">
-
+						<div style="border: 1px solid;padding-left: 5px;padding-right: 5px;" class="contact-form" id="wpforms33">
+							<?php
+							echo do_shortcode('[wpforms id="38"]');
+							?>
 						</div>
 					</div>
 				</div>

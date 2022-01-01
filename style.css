@@ -3749,6 +3749,7 @@ body.page .main-navigation {
   width: fit-content;
   font-family: Anton;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .contact-block .no-bullets ul {
@@ -3809,9 +3810,10 @@ a.more-btn-wrapper {
   text-decoration: none;
   display: block;
   width: fit-content;
+  letter-spacing: 1px;
 }
 
-a.more-btn-wrapper :hover {
+a.more-btn-wrapper:hover {
   text-decoration: none;
 }
 
@@ -3825,30 +3827,30 @@ a.more-btn-wrapper :hover {
 
 .more-btn:hover {
   background: #2658ce;
-  color: white;
+  color: yellow;
 }
 
 .store-callout-content {
   background: #393737e3;
   padding-bottom: 10px;
   padding-left: 10px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-family: Anton;
+  font-size: 20px;
 }
 
 .store-callout-description {
   font-size: 13px;
   padding: 5px 0;
+  text-transform: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .store-picture-title {
   background: black;
   padding: 10px;
   color: white;
-}
-
-.project-text {
-  background: #393737e3;
-  text-align: center;
-  padding: 5px 0;
 }
 
 #sticky-sidebar {
@@ -3931,6 +3933,7 @@ a.more-btn-wrapper :hover {
   padding: 10px;
   font-family: Anton;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .normal-sub-header {
@@ -3948,6 +3951,74 @@ a.more-btn-wrapper :hover {
 
 .fs-20 {
   font-size: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  max-width: 100% !important;
+}
+
+.contact-form div.wpforms-container-full {
+  margin-bottom: 5px !important;
+}
+
+.contact-form .wpforms-submit-container {
+  padding-top: 0 !important;
+}
+
+.contact-form .wpforms-submit-container button {
+  padding: 5px 10px;
+}
+
+ul.rl-gallery {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+h2.wp-block-post-title {
+  font-size: 1.5rem;
+}
+
+h2.wp-block-post-title::before {
+  display: none !important;
+}
+
+.entry .entry-title::before {
+  display: none !important;
+}
+
+.project-text {
+  background: #393737e3;
+  text-align: center;
+}
+
+.project-text .project-link {
+  text-decoration: none;
+  color: white;
+  font-family: Anton;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+}
+
+.project-text .project-link:hover {
+  text-decoration: underline;
+  color: yellow;
+  background: blue;
+}
+
+.project-text .project-link:visited {
+  color: white;
+}
+
+.bct {
+  margin-top: 15px;
+  margin-left: 80px;
+}
+
+.bct img {
+  width: 6rem;
 }
 
 /* Content */
@@ -4090,7 +4161,7 @@ a.more-btn-wrapper :hover {
 }
 
 .top-header-info {
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   background: black;
   color: white;
   text-align: center;

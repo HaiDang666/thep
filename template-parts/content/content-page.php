@@ -13,63 +13,28 @@
 
 <div class="container">
 	<div class="row py-3">
-		<div class="col-3 pl-0 pr-0" style="max-height: 287px"  id="sticky-sidebar">
-			<div class="sticky-top">
-				<div class="contact-header pt-1 pb-1">
-					Ho tro khach hang
-				</div>
-				<li class="no-bullets">
-					<ul>
-						<div>Nhan vien Ban hang (Dung)</div>
-						<div>
-							<i class="fas fa-phone-square">
-								<img class="zalo-icon" src="https://page.widget.zalo.me/static/images/2.0/Logo.svg"/>
-							</i>
-							0123456789
-						</div>
-					</ul>
-					<ul>
-						<div>Nhan vien Ban hang (Dung)</div>
-						<div>
-							<i class="fas fa-phone-square">
-								<img class="zalo-icon" src="https://page.widget.zalo.me/static/images/2.0/Logo.svg"/>
-							</i>
-							0123456789
-						</div>
-					</ul>
-					<ul>
-						<div>Nhan vien Ban hang (Dung)</div>
-						<div>
-							<i class="fas fa-phone-square">
-								<img class="zalo-icon" src="https://page.widget.zalo.me/static/images/2.0/Logo.svg"/>
-							</i>
-							0123456789
-						</div>
-					</ul>
-				</li>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="col" id="main">
+		<div class="col-sm-12 col-md-9" id="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 					
-				<header class="entry-header">
-					<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
-				</header>
+					<header class="entry-header mt-0">
+						<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
+					</header>
 				<?php endif; ?>
 
 				<div class="entry-content">
-					<?php
-					the_content();
+					<div class="input-full-width">
+						<?php
+						the_content();
 
-					wp_link_pages(
-						array(
-							'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
-							'after'  => '</div>',
-						)
-					);
-					?>
+						wp_link_pages(
+							array(
+								'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
+								'after'  => '</div>',
+							)
+						);
+						?>
+					</div>
 				</div>
 				<?php if ( get_edit_post_link() ) : ?>
 					<footer class="entry-footer">
@@ -94,6 +59,46 @@
 					</footer><!-- .entry-footer -->
 				<?php endif; ?>
 			</article><!-- #post-<?php the_ID(); ?> -->
+		</div>
+		<div class="col-sm-12 col-md-3 pl-0 pr-0">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="bg-black">
+						<div class="normal-header">Hỗ Trợ Tư Vấn</div>
+					</div>
+					<div style="border: 1px solid;">
+						<div class="mb-1 mt-1 pl-1">
+							<div class="normal-sub-header">Đặt hàng</div>
+							<div style="font-size: 20px;text-align: center;">
+								<div><i class="fas fa-phone-square pr-1"></i>02973 86 86 39 </div>
+								<div>(Văn phòng)</div>
+								<div><i class="fas fa-phone-square pr-1"></i>0817 62 75 75 </div>
+								<div>(Mr. Sa)</div>
+							</div>
+						</div>
+						<div class="mb-1 mt-1 pl-1">
+							<div class="normal-sub-header">Thi công xây dựng</div>
+							<div style="font-size: 20px;text-align: center;">
+								<div><i class="fas fa-phone-square pr-1"></i>097 777 62 82</div>
+								<div>(Mr. Tuấn Anh)</div>
+								<div><i class="fas fa-phone-square pr-1"></i>098 97 97 108 </div>
+								<div>(Mr. Sa)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-md-12 mt-2">
+					<div class="bg-black">
+						<div class="normal-header">Gửi Liên Hệ</div>
+					</div>
+					<div style="border: 1px solid;padding-left: 5px;padding-right: 5px;" class="contact-form">
+						<?php
+						echo do_shortcode('[wpforms id="38"]');
+						?>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -12,49 +12,93 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div class="row">
+		<div class="col-sm-12 col-md-9">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+					<?php
 
-			<?php
+					// Start the Loop.
+					while ( have_posts() ) :
+						the_post();
 
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
+						get_template_part( 'template-parts/content/content', 'single' );
 
-				get_template_part( 'template-parts/content/content', 'single' );
+						// if ( is_singular( 'attachment' ) ) {
+						// 	// Parent post navigation.
+						// 	the_post_navigation(
+						// 		array(
+						// 			/* translators: %s: Parent post link. */
+						// 			'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentynineteen' ), '%title' ),
+						// 		)
+						// 	);
+						// } elseif ( is_singular( 'post' ) ) {
+						// 	// Previous/next post navigation.
+						// 	the_post_navigation(
+						// 		array(
+						// 			'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'twentynineteen' ) . '</span> ' .
+						// 				'<span class="screen-reader-text">' . __( 'Next post:', 'twentynineteen' ) . '</span> <br/>' .
+						// 				'<span class="post-title">%title</span>',
+						// 			'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'twentynineteen' ) . '</span> ' .
+						// 				'<span class="screen-reader-text">' . __( 'Previous post:', 'twentynineteen' ) . '</span> <br/>' .
+						// 				'<span class="post-title">%title</span>',
+						// 		)
+						// 	);
+						// }
 
-				if ( is_singular( 'attachment' ) ) {
-					// Parent post navigation.
-					the_post_navigation(
-						array(
-							/* translators: %s: Parent post link. */
-							'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentynineteen' ), '%title' ),
-						)
-					);
-				} elseif ( is_singular( 'post' ) ) {
-					// Previous/next post navigation.
-					the_post_navigation(
-						array(
-							'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Next post:', 'twentynineteen' ) . '</span> <br/>' .
-								'<span class="post-title">%title</span>',
-							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Previous post:', 'twentynineteen' ) . '</span> <br/>' .
-								'<span class="post-title">%title</span>',
-						)
-					);
-				}
+						// If comments are open or we have at least one comment, load up the comment template.
+						// if ( comments_open() || get_comments_number() ) {
+						// 	comments_template();
+						// }
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
+					endwhile; // End the loop.
+					?>
 
-			endwhile; // End the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				</main><!-- #main -->
+			</div><!-- #primary -->
+		</div>
+		<div class="col-sm-12 col-md-3 pl-0 pr-0">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="bg-black">
+						<div class="normal-header">Hỗ Trợ Tư Vấn</div>
+					</div>
+					<div style="border: 1px solid;">
+						<div class="mb-1 mt-1 pl-1">
+							<div class="normal-sub-header">Đặt hàng</div>
+							<div style="font-size: 20px;text-align: center;">
+								<div><i class="fas fa-phone-square pr-1"></i>02973 86 86 39 </div>
+								<div>(Văn phòng)</div>
+								<div><i class="fas fa-phone-square pr-1"></i>0817 62 75 75 </div>
+								<div>(Mr. Sa)</div>
+							</div>
+						</div>
+						<div class="mb-1 mt-1 pl-1">
+							<div class="normal-sub-header">Thi công xây dựng</div>
+							<div style="font-size: 20px;text-align: center;">
+								<div><i class="fas fa-phone-square pr-1"></i>097 777 62 82</div>
+								<div>(Mr. Tuấn Anh)</div>
+								<div><i class="fas fa-phone-square pr-1"></i>098 97 97 108 </div>
+								<div>(Mr. Sa)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-md-12 mt-2">
+					<div class="bg-black">
+						<div class="normal-header">Gửi Liên Hệ</div>
+					</div>
+					<div style="border: 1px solid;padding-left: 5px;padding-right: 5px;" class="contact-form">
+						<?php
+						echo do_shortcode('[wpforms id="38"]');
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 <?php
 get_footer();
