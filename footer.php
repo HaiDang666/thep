@@ -41,41 +41,51 @@
 		</div>
 	</div>
 
-	<footer id="colophon" class="site-footer bg-black pb-5">
+	<footer id="colophon" class="site-footer bg-black">
 		<div class="site-info content-area pt-2">
-			<div style="color: gray;">
-				<span style="font-weight: bolder;color: white;">Từ khoá: </span>
-				Bẻ đai | Thép hộp vuông | Thép hộp chữ nhật | Thép xây dựng | Báo giá | Khảo sát địa chất | Khoan cọc nhồi | Ép cọc | Bờ kè | Xây dựng nhà ở | Xây dựng nhà yến
+			<div class="bg-black">
+				<div>
+					<span style="font-weight: bolder;color: white;">Từ khoá: </span>
+					<span style="color: black;font-weight: initial;">
+					Bẻ đai | Thép hộp vuông | Thép hộp chữ nhật | Thép xây dựng | Báo giá | Khảo sát địa chất | Khoan cọc nhồi | Ép cọc | Bờ kè | Xây dựng nhà ở | Xây dựng nhà yến
+					</span>
+				</div>
+				<div class="pb-2" style="border-bottom: 1px solid;">
+					<?php if ( has_nav_menu( 'footer' ) ) : ?>
+						<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'footer',
+									'menu_class'     => 'footer-menu',
+									'depth'          => 1,
+								)
+							);
+							?>
+						</nav><!-- .footer-navigation -->
+					<?php endif; ?>
+				</div>
 			</div>
-			<div class="pb-2" style="border-bottom: 1px solid;">
-				<?php if ( has_nav_menu( 'footer' ) ) : ?>
-					<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'footer',
-								'menu_class'     => 'footer-menu',
-								'depth'          => 1,
-							)
-						);
-						?>
-					</nav><!-- .footer-navigation -->
-				<?php endif; ?>
-			</div>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+	<footer id="colophon" class="site-footer pb-5">
+		<div class="site-info content-area pt-2">
 			<div class="row pt-3">
 				<div class="col-sm-12 col-md-4">
 					<div>
 						<h3 class="anton-text">DNTN THÉP GIA ĐẠT</h3>
 						<div>
-							<i class="fas fa-map pr-1"></i>Địa chỉ: Lô F13-15,16,17 Đường 3/2, Phường Vĩnh Lạc, TP. Rạch Giá, Kiên Giang.
+							<i class="fas fa-map pr-1"></i>
+							<span class="t-black">Địa chỉ: Lô F13-15,16,17 Đường 3/2, Phường Vĩnh Lạc, TP. Rạch Giá, Kiên Giang.</span>
 						</div>
 						<div>
 							<a target="_blank" href="tel:0817627575">
-								<i class="fas fa-phone-square pr-1"></i>Điện thoại: 081 762 7575
+								<i class="fas fa-phone-square pr-1"></i><span class="t-black">Điện thoại: 081 762 7575</span>
 							</a>
 						</div>
 						<div>
-							<i class="fas fa-envelope pr-1"></i>Email: thepgiadat@gmail.com
+							<i class="fas fa-envelope pr-1"></i><span class="t-black">Email: thepgiadat@gmail.com</span>
 						</div>
 						<div class="bct">
 							<img src="https://thepgiadat.com/wp-content/uploads/2022/01/DTB.webp">
@@ -101,10 +111,7 @@
 					</div>
 				</div>
 			</div>
-
 		</div><!-- .site-info -->
-
-
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

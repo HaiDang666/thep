@@ -90,7 +90,7 @@ get_header();
 							Hình Ảnh Cửa Hàng
 						</div>
 					</div>
-					<div class="col-md-12" id="slide-anything55">
+					<div class="col-md-12 store-picture-slider" id="slide-anything55">
 						<?php
 						echo do_shortcode('[slide-anything id="17"]');
 						?>
@@ -99,17 +99,17 @@ get_header();
 					<!-- thi cong xay dung -->
 					<div class="contact-block col-sm-12 col-md-12 mt-2">
 						<div class="contact-header">
-							Thi Công Xây Dựng
+							Phục Vụ Công Trình
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-12 product-block">
+					<div class="col-sm-12 col-md-12 product-block mb-3">
 						<div class="row">
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
 								<div class="store-callout-image">
 									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/KSDC-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									<a class="project-link" href="https://thepgiadat.com/khao-sat-dia-chat-dia-hinh/">Khảo sát địa chất, địa hình</a>
+									<a class="project-link" href="https://thepgiadat.com/khao-sat-dia-chat-dia-hinh/">Nhà ở Anh Chức</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
@@ -117,7 +117,7 @@ get_header();
 									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/COC_NHOI-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									<a class="project-link" href="https://thepgiadat.com/khoan-coc-nhoi/">Khoan cọc nhồi</a>
+									<a class="project-link" href="https://thepgiadat.com/khoan-coc-nhoi/">Nhà ở Anh Chức</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
@@ -125,7 +125,7 @@ get_header();
 									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/NHA_YEN-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-yen/">Xây dựng nhà yến</a>
+									<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-yen/">Nhà ở Anh Chức</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
@@ -133,7 +133,7 @@ get_header();
 									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/NHA_O-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-o/">Xây dựng nhà ở</a>
+									<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-o/">Nhà ở Anh Chức</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
@@ -141,7 +141,7 @@ get_header();
 									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/EP_COC-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									<a class="project-link" href="https://thepgiadat.com/ep-coc/">Ép cọc</a>
+									<a class="project-link" href="https://thepgiadat.com/ep-coc/">Nhà ở Anh Chức</a>
 								</div>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
@@ -149,7 +149,7 @@ get_header();
 									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/BO_KE-front.jpg" style="height: 180px;width: 100%;"/>
 								</div>
 								<div class="project-text">
-									<a class="project-link" href="https://thepgiadat.com/bo-ke/">Bờ kè</a>
+									<a class="project-link" href="https://thepgiadat.com/bo-ke/">Nhà ở Anh Chức</a>
 								</div>
 							</div>
 						</div>
@@ -159,7 +159,7 @@ get_header();
 
 			<!-- right bar --->
 			<div class="col-sm-12 col-md-3 pl-0 pr-0">
-				<div class="row">
+				<div class="row ml-0">
 					<div class="col-md-12">
 						<div class="bg-black">
 							<div class="normal-header">Hỗ Trợ Tư Vấn</div>

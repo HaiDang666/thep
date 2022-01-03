@@ -2767,7 +2767,6 @@ a:focus {
 /** === Main menu === */
 .main-navigation {
   display: block;
-  margin-top: 1rem;
   /* Un-style buttons */
   /*
 	 * Sub-menu styles
@@ -2822,22 +2821,23 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu {
-  display: inline-block;
+  display: flex;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .main-navigation .main-menu > li {
-  color: black;
+  color: red;
   display: inline;
   position: relative;
 }
 
 .main-navigation .main-menu > li > a {
   font-weight: 700;
-  color: black;
-  margin-right: 0.5rem;
-  border-bottom: 3px solid black;
+  color: red;
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -2848,7 +2848,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li > a:hover,
 .main-navigation .main-menu > li > a:hover + svg {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid red;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children {
@@ -3322,6 +3322,10 @@ body.page .main-navigation {
   display: none;
 }
 
+.main-navigation .menu-main-container {
+  padding: 10px 0;
+}
+
 /* Menu animation */
 @keyframes slide_in_right {
   100% {
@@ -3411,6 +3415,7 @@ body.page .main-navigation {
 }
 
 .footer-navigation .footer-menu {
+  color: white;
   display: inline;
   padding-left: 0;
 }
@@ -3737,13 +3742,12 @@ body.page .main-navigation {
 }
 
 .contact-block {
-  background-color: white;
-  margin-bottom: 5px;
+  background-color: red;
+  margin-bottom: 10px;
 }
 
 .contact-block .contact-header {
   text-align: center;
-  background: black;
   color: white;
   padding: 10px;
   width: fit-content;
@@ -3831,7 +3835,7 @@ a.more-btn-wrapper:hover {
 }
 
 .store-callout-content {
-  background: #393737e3;
+  background: #502f32;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -3924,7 +3928,7 @@ a.more-btn-wrapper:hover {
 }
 
 .bg-black {
-  background: black;
+  background: red;
 }
 
 .normal-header {
@@ -3987,7 +3991,7 @@ h2.wp-block-post-title::before {
 }
 
 .project-text {
-  background: #393737e3;
+  background: #502f32;
   text-align: center;
 }
 
@@ -4019,6 +4023,14 @@ h2.wp-block-post-title::before {
 
 .bct img {
   width: 6rem;
+}
+
+.store-picture-slider {
+  padding-bottom: 15px;
+}
+
+.t-black {
+  color: black;
 }
 
 /* Content */
@@ -4059,11 +4071,12 @@ h2.wp-block-post-title::before {
   hyphens: auto;
   position: relative;
   word-wrap: break-word;
+  border-bottom: 2px solid red;
 }
 
 @media only screen and (min-width: 768px) {
   .site-branding {
-    margin: 0 5%;
+    margin: 0 4%;
   }
 }
 
@@ -4162,12 +4175,13 @@ h2.wp-block-post-title::before {
 
 .top-header-info {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  background: black;
+  background: #212b5e8c;
   color: white;
   text-align: center;
   font-size: 18px;
   padding-top: 0.5rem;
   background-image: url("https://thepgiadat.com/wp-content/uploads/2021/12/banner.png");
+  background-blend-mode: color-burn;
 }
 
 .site-header.featured-image {
@@ -5389,7 +5403,7 @@ h2.wp-block-post-title::before {
 }
 
 #colophon .site-info {
-  color: white;
+  color: red;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;

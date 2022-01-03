@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Displays header site branding
  *
@@ -7,55 +8,17 @@
  * @since Twenty Nineteen 1.0
  */
 ?>
-<div class="site-branding">
-
-	<!-- <?php if ( has_custom_logo() ) : ?>
-		<div class="site-logo"><?php the_custom_logo(); ?></div>
-	<?php endif; ?> -->
-	<?php $blog_info = get_bloginfo( 'name' ); ?>
-	<!-- <?php if ( ! empty( $blog_info ) ) : ?>
-		<?php if ( is_front_page() && is_home() ) : ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<?php else : ?>
-			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-		<?php endif; ?>
-	<?php endif; ?> -->
-
-	<!-- <?php
-	$description = get_bloginfo( 'description', 'display' );
-	if ( $description || is_customize_preview() ) :
-		?>
-			<p class="site-description">
-				<?php echo $description; ?>
-			</p>
-	<?php endif; ?> -->
-
-	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
-		<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_class'     => 'main-menu',
-					'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	<?php endif; ?>
-	<?php if ( has_nav_menu( 'social' ) ) : ?>
-		<nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentynineteen' ); ?>">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'social',
-					'menu_class'     => 'social-links-menu',
-					'link_before'    => '<span class="screen-reader-text">',
-					'link_after'     => '</span>' . twentynineteen_get_icon_svg( 'link' ),
-					'depth'          => 1,
-				)
-			);
-			?>
-		</nav><!-- .social-navigation -->
-	<?php endif; ?>
+<div class="site-branding mb-2">
+	<nav id="site-navigation" class="main-navigation" aria-label="Top Menu">
+		<div class="menu-main-container">
+			<ul id="menu-main" class="main-menu">
+				<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-14"><a href="https://thepgiadat.com" aria-current="page">TRANG CHỦ</a></li>
+				<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="https://thepgiadat.com/bao-gia/">Báo GIÁ Nhanh</a></li>
+				<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://thepgiadat.com/">SẢN PHẨM</a></li>
+				<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="https://thepgiadat.com/">Hình ảnh cửa hàng</a></li>
+				<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://thepgiadat.com/cong-trinh-xay-dung/">Công Trình</a></li>
+				<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://thepgiadat.com/lien-he/">LIÊN HỆ</a></li>
+			</ul>
+		</div>
+	</nav>
 </div><!-- .site-branding -->

@@ -17,15 +17,15 @@
 }
 
 .contact-block {
-	background-color: white;
+	background-color: $color-main;
 	// border: 1px solid grey;
 	// padding-left: 0 !important;
 	// padding-right: 0 !important;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 
 	.contact-header {
 		text-align: center;
-		background: black;
+		// background-color: $color-main;
 		color: white;
 		padding: 10px;
 		width: fit-content;
@@ -89,6 +89,7 @@
     display: flex;
     color: white;
     padding-bottom: 15px;
+	// background: $color-main;
 }
 
 a.more-btn-wrapper {
@@ -116,7 +117,7 @@ a.more-btn-wrapper {
 }
 
 .store-callout-content {
-    background: #393737e3;
+    background: #502f32;
     padding-bottom: 10px;
     padding-left: 10px;
 	padding-top: 5px;
@@ -209,7 +210,7 @@ a.more-btn-wrapper {
 }
 
 .bg-black {
-	background: black;
+	background: $color-main;
 }
 
 .normal-header {
@@ -273,7 +274,7 @@ h2.wp-block-post-title::before {
 }
 
 .project-text {
-	background: #393737e3;
+	background: #502f32;
 	text-align: center;
 
 	.project-link {
@@ -304,4 +305,13 @@ h2.wp-block-post-title::before {
 	img {
 		width: 6rem;
 	}
+}
+
+.store-picture-slider {
+	// background: $color-main;
+	padding-bottom: 15px;
+}
+
+.t-black {
+	color: black;
 }
