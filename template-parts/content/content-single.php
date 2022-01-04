@@ -69,21 +69,6 @@
 				</ul>
 			</div>
 			<div>
-				<div style="text-transform: uppercase;">Thi công xây dựng</div>
-				<ul class="mb-0">
-					<li>
-						<a target="_blank" href="tel:0977776282">
-							<i class="fas fa-phone-square pr-1"></i>Điện thoại: 097 777 62 82 (Mr. Tuấn Anh)
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="tel:0989797108">
-							<i class="fas fa-phone-square pr-1"></i>Điện thoại: 098 97 97 108 (Mr. Sa)
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div>
 				<i class="fas fa-envelope pr-1"></i>Email: thepgiadat@gmail.com
 			</div>
 		</div>

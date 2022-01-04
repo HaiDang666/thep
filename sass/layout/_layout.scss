@@ -22,6 +22,8 @@
 	// padding-left: 0 !important;
 	// padding-right: 0 !important;
 	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px #ff00004f;
 
 	.contact-header {
 		text-align: center;
@@ -90,6 +92,8 @@
     color: white;
     padding-bottom: 15px;
 	// background: $color-main;
+	padding-left: 13px !important;
+	padding-right: 13px !important;
 }
 
 a.more-btn-wrapper {
@@ -107,8 +111,9 @@ a.more-btn-wrapper {
 	border: 2px solid #2658ce;
 	color: white;
 	display: block;
-	padding: 0 10px;
+	padding: 3px 18px;
 	font-size: 15px;
+	border-radius: 5px;
 
 	&:hover {
 		background: #2658ce;
@@ -314,4 +319,22 @@ h2.wp-block-post-title::before {
 
 .t-black {
 	color: black;
+}
+
+.rightbar-box {
+	border: 4px solid red;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.product-box {
+	border: 1px solid brown;
+	border-radius: 0 20% 0 0;
+	overflow: hidden;
+	box-shadow: 12px 6px #7b20205e;
+}
+
+.project-box {
+	border: 2px solid #502f32;
+box-shadow: 12px 6px #502f328c;
 }

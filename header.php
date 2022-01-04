@@ -34,11 +34,12 @@
 			<div class="top-header-info">
 				<div>
 					<?php if ( has_custom_logo() ) : ?>
+
 						<?php the_custom_logo(); ?>
 					<?php endif; ?>
 				</div>
 				<div>
-					<div style="font-size: 44px;font-family: Anton;color: #2377f8;letter-spacing: 1px;">THÉP GIA ĐẠT</div>
+					<div style="font-size: 44px;font-family: Anton;color: #2377f8;letter-spacing: 1px;">CỬ<Abbr></Abbr> HÀNG SẮT THÉP GIA ĐẠT KIÊN GIANG</div>
 					<div>Chuyên phân phối sắt thép xây dựng, thép hộp, thép hình từ các nhà máy thép uy tín. </div>
 					<div>
 						Địa chỉ: Lô F13-15,16,17 Đường 3/2, Phường Vĩnh Lạc, TP. Rạch Giá, Kiên Giang.

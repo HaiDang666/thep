@@ -73,15 +73,6 @@ get_header();
 								<div>(Mr. Sa)</div>
 							</div>
 						</div>
-						<div class="mb-1 mt-1 pl-1">
-							<div class="normal-sub-header">Thi công xây dựng</div>
-							<div style="font-size: 20px;text-align: center;">
-								<div><i class="fas fa-phone-square pr-1"></i>097 777 62 82</div>
-								<div>(Mr. Tuấn Anh)</div>
-								<div><i class="fas fa-phone-square pr-1"></i>098 97 97 108 </div>
-								<div>(Mr. Sa)</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			
@@ -91,7 +82,7 @@ get_header();
 					</div>
 					<div style="border: 1px solid;padding-left: 5px;padding-right: 5px;" class="contact-form">
 						<?php
-						echo do_shortcode('[wpforms id="38"]');
+						echo do_shortcode('[wpforms id="33"]');
 						?>
 					</div>
 				</div>
