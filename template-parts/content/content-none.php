@@ -12,11 +12,11 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'twentynineteen' ); ?></h1>
+	<header class="page-header mr-0 ml-0">
+		<h1 class="page-title"><?php _e( 'Không tìm thấy nội dung', 'twentynineteen' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<div class="page-content">
+	<div class="">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
@@ -36,18 +36,26 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentynineteen' ); ?></p>
-			<?php
-			get_search_form();
+			<p><?php _e( 'Vui lòng thử lại với từ khoá khác.', 'twentynineteen' ); ?></p>
+			<form role="search" method="get" action="https://thepgiadat.com/">
+				<div class="searchBox">
+					<input type="search" placeholder="Nhập từ khoá" name="s">
+					<!-- <input  class="search-field"> -->
+					<button type="submit" class="btn">Tìm kiếm</button>
+				</div>
+			</form>
+			
+		<?php else : ?>
 
-		else :
-			?>
-
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentynineteen' ); ?></p>
-			<?php
-			get_search_form();
-
-		endif;
-		?>
+			<p><?php _e( 'Vui lòng thử lại với từ khoá khác.', 'twentynineteen' ); ?></p>
+			<form role="search" method="get" action="https://thepgiadat.com/">
+				<div class="searchBox">
+					<input type="search" placeholder="Nhập từ khoá" name="s">
+					<!-- <input  class="search-field"> -->
+					<button type="submit" class="btn">Tìm kiếm</button>
+				</div>
+			</form>
+			
+		<?php endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

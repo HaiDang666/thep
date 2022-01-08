@@ -11,9 +11,12 @@
 
 get_header();
 ?>
-
+<div class="container">
 	<div class="row">
-		<div class="col-sm-12 col-md-9">
+		<?php
+			get_template_part( 'template-parts/content/content', 'leftbar' );
+		?>
+		<div class="col-sm-12 col-md-7">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main">
 					<?php
@@ -57,39 +60,11 @@ get_header();
 				</main><!-- #main -->
 			</div><!-- #primary -->
 		</div>
-		<div class="col-sm-12 col-md-3 pl-0 pr-0">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="bg-black">
-						<div class="normal-header">Hỗ Trợ Tư Vấn</div>
-					</div>
-					<div style="border: 1px solid;">
-						<div class="mb-1 mt-1 pl-1">
-							<div class="normal-sub-header">Đặt hàng</div>
-							<div style="font-size: 20px;text-align: center;">
-								<div><i class="fas fa-phone-square pr-1"></i>02973 86 86 39 </div>
-								<div>(Văn phòng)</div>
-								<div><i class="fas fa-phone-square pr-1"></i>0817 62 75 75 </div>
-								<div>(Mr. Sa)</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-md-12 mt-2">
-					<div class="bg-black">
-						<div class="normal-header">Gửi Liên Hệ</div>
-					</div>
-					<div style="border: 1px solid;padding-left: 5px;padding-right: 5px;" class="contact-form">
-						<?php
-						echo do_shortcode('[wpforms id="33"]');
-						?>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php
+			get_template_part( 'template-parts/content/content', 'rightbar' );
+		?>
 	</div>
-	
+</div>
 
 <?php
 get_footer();

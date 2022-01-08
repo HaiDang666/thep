@@ -94,7 +94,7 @@
 				</div>
 				<div class="col-sm-12 col-md-4">
 					<div>
-						<div class="anton-text">Bản Đồ</div>
+						<div class="anton-text fs-20">Bản Đồ</div>
 						<div class="google-map">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3693177851246!2d105.08750231479401!3d9.98632039286055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b5ed6eb297bb%3A0xcdd2719138d107d5!2zRE5UTiBUaMOpcCBHaWEgxJDhuqF0!5e0!3m2!1sen!2s!4v1640414073756!5m2!1sen!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
@@ -102,7 +102,7 @@
 				</div>
 				<div class="col-sm-12 col-md-4">
 					<div>
-						<div class="anton-text">Facebook</div>
+						<div class="anton-text fs-20">Facebook</div>
 						<div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100076226703186" data-tabs="" data-width="350" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
 							<blockquote cite="https://www.facebook.com/profile.php?id=100076226703186" class="fb-xfbml-parse-ignore">
 								<a href="https://www.facebook.com/profile.php?id=100076226703186">Thép Gia Đạt Kiên Giang</a>
@@ -117,5 +117,29 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+	jQuery(document).ready(function($){
+	
+	/* Search Menu */
+	
+	$(".btn-sss").click(function() {
+		// $(".wpbsearchform").slideToggle();
+		$(".wpbsearchform").slideToggle("fast", function() {
+			if ($(this).is(':visible')) {
+				$("#searchField").focus();
+			}
+		});
+	});
+
+	$(document).keyup(function(e) {
+		// Ref https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery
+		// Close search if esc key pressed
+		if (e.key == "Escape") {
+			$(".wpbsearchform").hide();
+		}
+	});
+
+});
+</script>
 </body>
 </html>

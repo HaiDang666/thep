@@ -112,110 +112,43 @@ get_header();
 					</div>
 					<div class="col-sm-12 col-md-12 product-block mb-3">
 						<div class="row">
-							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
-								<div class="project-box">
-									<div class="store-callout-image">
-										<img src="https://thepgiadat.com/wp-content/uploads/2021/12/KSDC-front.jpg" style="height: 180px;width: 100%;"/>
-									</div>
-									<div class="project-text">
-										<a class="project-link" href="https://thepgiadat.com/khao-sat-dia-chat-dia-hinh/">Nhà ở Anh Chức</a>
-									</div>
-								</div>
-							</div>
-							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
-								<div class="project-box">
-									<div class="store-callout-image">
-										<img src="https://thepgiadat.com/wp-content/uploads/2021/12/COC_NHOI-front.jpg" style="height: 180px;width: 100%;"/>
-									</div>
-									<div class="project-text">
-										<a class="project-link" href="https://thepgiadat.com/khoan-coc-nhoi/">Nhà ở Anh Chức</a>
-									</div>
-								</div>
-							</div>
-							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
-								<div class="project-box">
-									<div class="store-callout-image">
-										<img src="https://thepgiadat.com/wp-content/uploads/2021/12/NHA_YEN-front.jpg" style="height: 180px;width: 100%;"/>
-									</div>
-									<div class="project-text">
-										<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-yen/">Nhà ở Anh Chức</a>
+							<?php
+								$args = array(
+									'numberposts' => 6,
+									'category' => 3
+								);
+							
+								$str = "";
+								$posts = get_posts($args);
+							
+								foreach($posts as $post):
+									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+							?>
+								<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
+									<div class="project-box">
+										<div class="store-callout-image">
+											<img src="<?php echo $image[0]; ?>" style="height: 180px;width: 100%;"/>
+										</div>
+										<div class="project-text">
+											<a class="project-link" href="<?php echo get_permalink( $post->ID ); ?>"><?php echo $post->post_title; ?></a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
-								<div class="project-box">
-									<div class="store-callout-image">
-										<img src="https://thepgiadat.com/wp-content/uploads/2021/12/NHA_O-front.jpg" style="height: 180px;width: 100%;"/>
-									</div>
-									<div class="project-text">
-										<a class="project-link" href="https://thepgiadat.com/xay-dung-nha-o/">Nhà ở Anh Chức</a>
-									</div>
-								</div>
-							</div>
-							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
-								<div class="project-box">
-									<div class="store-callout-image">
-										<img src="https://thepgiadat.com/wp-content/uploads/2021/12/EP_COC-front.jpg" style="height: 180px;width: 100%;"/>
-									</div>
-									<div class="project-text">
-										<a class="project-link" href="https://thepgiadat.com/ep-coc/">Nhà ở Anh Chức</a>
-									</div>
-								</div>
-							</div>
-							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-4">
-								<div class="project-box">
-									<div class="store-callout-image">
-										<img src="https://thepgiadat.com/wp-content/uploads/2021/12/BO_KE-front.jpg" style="height: 180px;width: 100%;"/>
-									</div>
-									<div class="project-text">
-										<a class="project-link" href="https://thepgiadat.com/bo-ke/">Nhà ở Anh Chức
-										</a>
-									</div>
-								</div>
-							</div>
+							
+							<?php
+								endforeach;
+							?>
+					
+							
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- right bar --->
-			<div class="col-sm-12 col-md-3 pl-0 pr-0 mb-3">
-				<div class="row ml-0 mr-0">
-					<div class="col-md-12">
-						<div class="rightbar-box">
-							
-								<div class="bg-black">
-									<div class="normal-header">Hỗ Trợ Tư Vấn</div>
-								</div>
-								<div>
-									<div class="mb-1 mt-1 pl-1">
-										<div class="normal-sub-header">Đặt hàng</div>
-										<div style="font-size: 20px;text-align: center;">
-											<div><i class="fas fa-phone-square pr-1"></i>02973 86 86 39 </div>
-											<div>(Văn phòng)</div>
-											<div><i class="fas fa-phone-square pr-1"></i>0817 62 75 75 </div>
-											<div>(Mr. Sa)</div>
-										</div>
-									</div>
-								</div>
-
-						</div>
-					</div>
-				
-					<div class="col-md-12 mt-2">
-						<div class="rightbar-box">
-							<div class="bg-black">
-								<div class="normal-header">Gửi Liên Hệ</div>
-							</div>
-							<div style="padding-left: 5px;padding-right: 5px;" class="contact-form" id="wpforms33">
-								<?php
-								echo do_shortcode('[wpforms id="38"]');
-								?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php
+				get_template_part( 'template-parts/content/content', 'rightbar' );
+			?>
 		</div>
 	</main>
 </div>

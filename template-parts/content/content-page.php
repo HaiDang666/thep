@@ -13,16 +13,19 @@
 
 <div class="container">
 	<div class="row py-3">
-		<div class="col-sm-12 col-md-9" id="main">
+		<?php
+			get_template_part( 'template-parts/content/content', 'leftbar' );
+		?>
+		<div class="col-sm-12 col-md-7" id="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 					
-					<header class="entry-header mt-0">
+					<header class="entry-header mt-0 ml-0 mr-0">
 						<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 					</header>
 				<?php endif; ?>
 
-				<div class="entry-content">
+				<div class="entry-content pr-0 pl-0 mr-0 ml-3">
 					<div class="input-full-width">
 						<?php
 						the_content();
@@ -60,36 +63,8 @@
 				<?php endif; ?>
 			</article><!-- #post-<?php the_ID(); ?> -->
 		</div>
-		<div class="col-sm-12 col-md-3 pl-0 pr-0">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="bg-black">
-						<div class="normal-header">Hỗ Trợ Tư Vấn</div>
-					</div>
-					<div style="border: 1px solid;">
-						<div class="mb-1 mt-1 pl-1">
-							<div class="normal-sub-header">Đặt hàng</div>
-							<div style="font-size: 20px;text-align: center;">
-								<div><i class="fas fa-phone-square pr-1"></i>02973 86 86 39 </div>
-								<div>(Văn phòng)</div>
-								<div><i class="fas fa-phone-square pr-1"></i>0817 62 75 75 </div>
-								<div>(Mr. Sa)</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-md-12 mt-2">
-					<div class="bg-black">
-						<div class="normal-header">Gửi Liên Hệ</div>
-					</div>
-					<div style="border: 1px solid;padding-left: 5px;padding-right: 5px;" class="contact-form">
-						<?php
-						echo do_shortcode('[wpforms id="33"]');
-						?>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php
+			get_template_part( 'template-parts/content/content', 'rightbar' );
+		?>
 	</div>
 </div>

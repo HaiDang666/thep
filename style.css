@@ -4056,6 +4056,39 @@ h2.wp-block-post-title::before {
   box-shadow: 12px 6px #502f328c;
 }
 
+.btn-sss:hover {
+  transform: scale(1.1);
+}
+
+.wpbsearchform {
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+}
+
+.searchBox {
+  background-color: red;
+  border: 5px solid #f90b0b;
+  border-radius: 5px;
+  box-shadow: 3px 3px #956a6a;
+  display: flex;
+}
+
+#searchBtn {
+  background: red;
+  color: white;
+  width: 100px;
+}
+
+#searchField {
+  width: 300px;
+}
+
+.lb-product {
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+}
+
 /* Content */
 /*--------------------------------------------------------------
 ## Header

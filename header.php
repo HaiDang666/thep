@@ -21,6 +21,7 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -39,7 +40,7 @@
 					<?php endif; ?>
 				</div>
 				<div>
-					<div style="font-size: 44px;font-family: Anton;color: #2377f8;letter-spacing: 1px;">CỬ<Abbr></Abbr> HÀNG SẮT THÉP GIA ĐẠT KIÊN GIANG</div>
+					<div style="font-size: 44px;font-family: Anton;color: #2377f8;letter-spacing: 1px;">CỬA HÀNG SẮT THÉP GIA ĐẠT KIÊN GIANG</div>
 					<div>Chuyên phân phối sắt thép xây dựng, thép hộp, thép hình từ các nhà máy thép uy tín. </div>
 					<div>
 						Địa chỉ: Lô F13-15,16,17 Đường 3/2, Phường Vĩnh Lạc, TP. Rạch Giá, Kiên Giang.

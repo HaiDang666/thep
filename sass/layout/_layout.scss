@@ -56,7 +56,7 @@
 }
 
 .product-block {
-	// background-image: url("http://localhost:8888/thep/wp-content/uploads/2021/12/steel-structure.jpg");
+	// background-image: url("https://thepgiadat.com/wp-content/uploads/2021/12/steel-structure.jpg");
 }
 
 .store-callout {
@@ -337,4 +337,48 @@ h2.wp-block-post-title::before {
 .project-box {
 	border: 2px solid #502f32;
 box-shadow: 12px 6px #502f328c;
+}
+
+.btn-sss {
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+// .wp-block-media-text.alignwide.is-stacked-on-mobile {
+//     margin-bottom: 15px;
+//     border: 3px solid brown;
+//     height: 150px;
+//     border-radius: 8px;
+//     padding: 0px 0px 0px 10px;
+//     overflow: hidden;
+// }
+
+.wpbsearchform {
+	position: absolute;
+	right: 0px;
+	z-index: 100;
+}
+
+.searchBox {
+	background-color: red;
+	border: 5px solid #f90b0b;
+	border-radius: 5px;
+	box-shadow: 3px 3px #956a6a;
+	display: flex;
+}
+
+#searchBtn {
+	background: red;
+	color: white;
+	width: 100px;
+}
+
+#searchField {
+	width: 300px;
+}
+
+.lb-product {
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
 }

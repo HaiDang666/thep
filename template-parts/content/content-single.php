@@ -14,14 +14,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if (!twentynineteen_can_show_post_thumbnail()) : ?>
-		<header class="entry-header mt-0">
+		<header class="entry-header mt-0 ml-0 mr-0">
 			<?php get_template_part('template-parts/header/entry', 'header'); ?>
 		</header>
 	<?php endif; ?>
-	<header class="entry-header mt-0">
+	<header class="entry-header mt-0 ml-0 mr-0">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header>
-	<div class="entry-content">
+	<div class="entry-content pr-0 pl-0 mr-0 ml-3">
 		<?php
 		the_content(
 			sprintf(
@@ -47,7 +47,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer ml-0 mr-0">
 		<div>
 			<h3 class="anton-text">DNTN THÉP GIA ĐẠT</h3>
 			<div>
