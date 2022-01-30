@@ -14,8 +14,20 @@
 			<ul id="menu-main" class="main-menu">
 				<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-14"><a href="https://thepgiadat.com" aria-current="page">TRANG CHỦ</a></li>
 				<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="https://thepgiadat.com/bao-gia/">Báo GIÁ Nhanh</a></li>
-				<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://thepgiadat.com/">SẢN PHẨM</a></li>
-				<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="https://thepgiadat.com/">Hình ảnh cửa hàng</a></li>
+				<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+					<div class="dropdown">
+						<a class="menu-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+							SẢN PHẨM
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item menu-dropdown-item" href="https://thepgiadat.com/thep-xay-dung/">Thép Xây Dựng</a>
+							<a class="dropdown-item menu-dropdown-item" href="https://thepgiadat.com/be-dai-tai-de/">Bẻ Đai - Tai Dê</a>
+							<a class="dropdown-item menu-dropdown-item" href="https://thepgiadat.com/thep-hop-vuong-2/">Thép Hộp Vuông</a>
+							<a class="dropdown-item menu-dropdown-item" href="https://thepgiadat.com/thep-hop-chu-nhat-2/">Thép Hộp Chữ Nhật</a>
+						</div>
+					</div>
+				</li>
+				<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="https://thepgiadat.com/hinh-anh-cua-hang/">Hình ảnh cửa hàng</a></li>
 				<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://thepgiadat.com/cong-trinh-phuc-vu/">Công Trình</a></li>
 				<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://thepgiadat.com/lien-he/">LIÊN HỆ</a></li>
 				<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11">

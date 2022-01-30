@@ -34,60 +34,53 @@ get_header();
 					<div class="col-sm-12 col-md-12 product-block">
 						<div class="row">
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-3">
-								<div class="product-box">
-								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/THEP-XD.png" style="height: 167px;width: 100%;"/>
-								</div>
-								<div class="store-callout-content">
-									Thép Xây Dựng
-									<div class="store-callout-description">Cung cấp các loại thép abc, sắt xyz và ...</div>
-									<a href="https://www.google.com" class="more-btn-wrapper">
-										<div class="more-btn">Xem thêm</div>
-									</a>
-								</div>
-								</div>
+								<a href="https://thepgiadat.com/thep-xay-dung/" class="noUnderline">
+									<div class="product-box">
+										<div class="store-callout-image">
+											<img src="https://thepgiadat.com/wp-content/uploads/2021/12/THEP-XD.png" style="height: 167px;width: 100%;"/>
+										</div>
+										<div class="store-callout-content">
+											Thép Xây Dựng
+										</div>
+									</div>
+								</a>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-3">
-							<div class="product-box">
-								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/BE-DAI.jpg" style="height: 167px;width: 100%;"/>
-								</div>
-								<div class="store-callout-content">
-									Bẻ Đai - Tai Dê
-									<div class="store-callout-description">Cung cấp các loại thép abc, sắt xyz và ...</div>
-									<a href="https://www.google.com" class="more-btn-wrapper">
-										<div class="more-btn">Xem thêm</div>
-									</a>
-								</div>
-								</div>
+								<a href="https://thepgiadat.com/be-dai-tai-de/" class="noUnderline">
+									<div class="product-box">
+										<div class="store-callout-image">
+											<img src="https://thepgiadat.com/wp-content/uploads/2021/12/BE-DAI.jpg" style="height: 167px;width: 100%;"/>
+										</div>
+										<div class="store-callout-content">
+											Bẻ Đai - Tai Dê
+										</div>
+									</div>
+								</a>
 							</div>
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-3">
-							<div class="product-box">
-								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/THEP-HOP-VUONG.jpg" style="height: 167px;width: 100%;"/>
-								</div>
-								<div class="store-callout-content">
-									Thép Hộp Vuông
-									<div class="store-callout-description">Cung cấp các loại thép abc, sắt xyz và ...</div>
-									<a href="https://www.google.com" class="more-btn-wrapper">
-										<div class="more-btn">Xem thêm</div>
-									</a>
-								</div>
-								</div>
+								<a href="https://thepgiadat.com/thep-hop-vuong-2/" class="noUnderline">
+									<div class="product-box">
+										<div class="store-callout-image">
+											<img src="https://thepgiadat.com/wp-content/uploads/2021/12/THEP-HOP-VUONG.jpg" style="height: 167px;width: 100%;"/>
+										</div>
+										<div class="store-callout-content">
+											Thép Hộp Vuông
+										</div>
+									</div>
+								</a>
 							</div>
+
 							<div class="store-callout-small small col-sm-12 col-md-6 col-lg-3">
-							<div class="product-box">
-								<div class="store-callout-image">
-									<img src="https://thepgiadat.com/wp-content/uploads/2021/12/THEP-HOP-CHU-NHAT.jpg" style="height: 167px;width: 100%;"/>
-								</div>
-								<div class="store-callout-content">
-									Thép Hộp Chữ Nhật
-									<div class="store-callout-description">Cung cấp các loại thép abc, sắt xyz và ...</div>
-									<a href="https://www.google.com" class="more-btn-wrapper">
-										<div class="more-btn">Xem thêm</div>
-									</a>
-								</div>
-								</div>
+								<a href="https://thepgiadat.com/thep-hop-chu-nhat-2/" class="noUnderline">
+									<div class="product-box">
+										<div class="store-callout-image">
+											<img src="https://thepgiadat.com/wp-content/uploads/2021/12/THEP-HOP-CHU-NHAT.jpg" style="height: 167px;width: 100%;"/>
+										</div>
+										<div class="store-callout-content">
+											Thép Hộp Chữ Nhật
+										</div>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

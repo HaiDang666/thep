@@ -47,10 +47,10 @@
 				<div>
 					<span style="font-weight: bolder;color: white;">Từ khoá: </span>
 					<span style="color: black;font-weight: initial;">
-					Bẻ đai | Thép hộp vuông | Thép hộp chữ nhật | Thép xây dựng | Báo giá | Khảo sát địa chất | Khoan cọc nhồi | Ép cọc | Bờ kè | Xây dựng nhà ở | Xây dựng nhà yến
+						Bẻ đai | Thép hộp vuông | Thép hộp chữ nhật | Thép xây dựng | Báo giá | Xây dựng nhà ở | Xây dựng nhà yến
 					</span>
 				</div>
-				<div class="pb-2" style="border-bottom: 1px solid;">
+				<div style="border-bottom: 1px solid;">
 					<?php if ( has_nav_menu( 'footer' ) ) : ?>
 						<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
 							<?php
@@ -65,11 +65,18 @@
 						</nav><!-- .footer-navigation -->
 					<?php endif; ?>
 				</div>
+
+				<div class="pb-2" style="color:white">
+					<a href="https://thepgiadat.com/chinh-sach-doi-tra-hang/">Chính sách đổi trả hàng</a> -
+					<a href="https://thepgiadat.com/chinh-sach-giao-hang/">Chính sách giao hàng</a> - 
+					<a href="https://thepgiadat.com/chinh-sach-thanh-toan/">Chính sách thanh toán</a> -
+					<a href="https://thepgiadat.com/chinh-sach-bao-mat/">Chính sách bảo mật</a> 
+				</div>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
-	<footer id="colophon" class="site-footer pb-5">
+	<footer id="colophon" class="site-footer pb-3">
 		<div class="site-info content-area pt-2">
 			<div class="row pt-3">
 				<div class="col-sm-12 col-md-4">
@@ -86,9 +93,6 @@
 						</div>
 						<div>
 							<i class="fas fa-envelope pr-1"></i><span class="t-black">Email: thepgiadat@gmail.com</span>
-						</div>
-						<div class="bct">
-							<img src="https://thepgiadat.com/wp-content/uploads/2022/01/DTB.webp">
 						</div>
 					</div>
 				</div>

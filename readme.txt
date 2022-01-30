@@ -108,20 +108,3 @@ Initial release
 	* Abstract Waves by HD Wallpapers, CC0. https://stocksnap.io/photo/abstract-waves-0KREGLTZQ3
 	* Abstract Bokeh by HD Wallpapers, CC0. https://stocksnap.io/photo/abstract-bokeh-P4KVZBMQ6L
 	* Colorful Bokeh by HD Wallpapers, CC0. https://stocksnap.io/photo/colorful-bokeh-VN4G84GL8H
-
-
-<div class="contact-header">
-						Facebook
-					</div>
-					<div class="text-center">
-						
-					</div>
-
-
-
-<div class="row pt-3">
-
-				<div class="col-sm-12 col-md-8">
-					
-				</div>
-			</div>

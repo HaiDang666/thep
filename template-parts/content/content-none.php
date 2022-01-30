@@ -16,7 +16,7 @@
 		<h1 class="page-title"><?php _e( 'Không tìm thấy nội dung', 'twentynineteen' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<div class="">
+	<div class="xyz">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
 

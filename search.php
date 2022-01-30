@@ -12,7 +12,7 @@
 get_header();
 ?>
 
-<div class="container">
+<div class="content-area">
 	<div class="row">
 		<?php
 			get_template_part( 'template-parts/content/content', 'leftbar' );

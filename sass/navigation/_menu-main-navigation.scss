@@ -76,6 +76,8 @@
 				// border-bottom: 3px solid white;
 				text-transform: uppercase;
 				font-size: 1rem;
+				font-family: 'Mulish';
+				text-decoration: none;
 
 				+ svg {
 					margin-right: #{0.5 * $size__spacing-unit};
@@ -85,6 +87,7 @@
 				&:hover + svg {
 					// color: $color__link-hover;
 					border-bottom: 2px solid $color-main;
+					text-decoration: none;
 				}
 			}
 
