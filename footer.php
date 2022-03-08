@@ -143,6 +143,10 @@
 		}
 	});
 
+	$("#dropdownMenuLink").mouseover(function(){
+		$(this).trigger('click');
+	});
+
 });
 </script>
 </body>

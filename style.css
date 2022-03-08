@@ -3756,8 +3756,7 @@ body.page .main-navigation {
   color: white;
   padding: 10px;
   width: fit-content;
-  font-family: Anton;
-  letter-spacing: 1px;
+  font-family: Mulish;
   text-transform: uppercase;
 }
 
@@ -3854,11 +3853,10 @@ a.more-btn-wrapper:hover {
   background: #502f32;
   color: white;
   padding-bottom: 10px;
-  padding-left: 10px;
   padding-top: 5px;
   text-transform: uppercase;
-  font-family: Anton;
-  font-size: 20px;
+  font-family: Mulish;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -3958,8 +3956,7 @@ a.more-btn-wrapper:hover {
   color: white;
   text-align: center;
   padding: 10px;
-  font-family: Anton;
-  letter-spacing: 1px;
+  font-family: Mulish;
   text-transform: uppercase;
 }
 
