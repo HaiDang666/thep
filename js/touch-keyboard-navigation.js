@@ -274,33 +274,36 @@
 
 		document.addEventListener('focus', function(event) {
 
-			if ( event.target.matches('.main-navigation > div > ul > li a') ) {
+			if ( typeof event.target.matches === "function" && event.target.matches('.main-navigation > div > ul > li a') ) {
 
 				// Remove Focused elements in sibling div.
 				var currentDiv        = getCurrentParent( event.target, 'div', '.main-navigation' );
 				var currentDivSibling = currentDiv.previousElementSibling === null ? currentDiv.nextElementSibling : currentDiv.previousElementSibling;
-				var focusedElement    = currentDivSibling.querySelector( '.is-focused' );
-				var focusedClass      = 'is-focused';
-				var prevLi            = getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ).previousElementSibling;
-				var nextLi            = getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ).nextElementSibling;
 
-				if ( null !== focusedElement && null !== hasClass( focusedElement, focusedClass ) ) {
-					deleteClass( focusedElement, focusedClass );
-				}
+				if (currentDivSibling !== null) {
+					var focusedElement    = currentDivSibling.querySelector( '.is-focused' );
+					var focusedClass      = 'is-focused';
+					var prevLi            = getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ).previousElementSibling;
+					var nextLi            = getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ).nextElementSibling;
 
-				// Add .is-focused class to top-level li.
-				if ( getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ) ) {
-					addClass( getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ), focusedClass );
-				}
+					if ( null !== focusedElement && null !== hasClass( focusedElement, focusedClass ) ) {
+						deleteClass( focusedElement, focusedClass );
+					}
 
-				// Check for previous li.
-				if ( prevLi && hasClass( prevLi, focusedClass ) ) {
-					deleteClass( prevLi, focusedClass );
-				}
+					// Add .is-focused class to top-level li.
+					if ( getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ) ) {
+						addClass( getCurrentParent( event.target, '.main-navigation > div > ul > li', '.main-navigation' ), focusedClass );
+					}
 
-				// Check for next li.
-				if ( nextLi && hasClass( nextLi, focusedClass ) ) {
-					deleteClass( nextLi, focusedClass );
+					// Check for previous li.
+					if ( prevLi && hasClass( prevLi, focusedClass ) ) {
+						deleteClass( prevLi, focusedClass );
+					}
+
+					// Check for next li.
+					if ( nextLi && hasClass( nextLi, focusedClass ) ) {
+						deleteClass( nextLi, focusedClass );
+					}
 				}
 			}
 

@@ -127,12 +127,20 @@
 	/* Search Menu */
 	
 	$(".btn-sss").click(function() {
+		// console.log("toggle");
 		// $(".wpbsearchform").slideToggle();
 		$(".wpbsearchform").slideToggle("fast", function() {
 			if ($(this).is(':visible')) {
 				$("#searchField").focus();
 			}
 		});
+	});
+
+	$("#searchField").click(function() {
+		// console.log("click");
+		setTimeout(() => {
+			$("#searchField").focus();
+		}, 0)
 	});
 
 	$(document).keyup(function(e) {

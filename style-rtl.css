@@ -4117,6 +4117,10 @@ h2.wp-block-post-title::before {
   text-transform: uppercase;
 }
 
+.contruction-project {
+  text-align: center;
+}
+
 /* Content */
 /*--------------------------------------------------------------
 ## Header
